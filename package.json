@@ -1,0 +1,25 @@
+{
+  "name": "data-quality-audit",
+  "version": "1.0.0-beta",
+  "description": "HISP Malawi designed and developed this tool to work as a harmonised data quality assessment tool, checking consistency of data entered in the DHIS2 against that which is in the paper based report and the registers.",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "scripts": {
+    "build": "d2-app-scripts build",
+    "start": "d2-app-scripts start --proxy https://play.dhis2.org/2.39.4.1/ ",
+    "test": "d2-app-scripts test",
+    "deploy": "d2-app-scripts deploy"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@dhis2/cli-app-scripts": "^10.3.9"
+  },
+  "dependencies": {
+    "@dhis2/app-runtime": "^3.9.4",
+    "@dhis2/ui": "^8.13.15",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "lodash": "^4.17.21",
+    "underscore": "^1.13.6"
+  }
+}

@@ -1,0 +1,217 @@
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.LayoutBox {
+    width: 100%;
+    display: flex;
+}
+.indicatorsPeriods{
+    width: 100%;
+    display: block;
+}
+.indicatorValues{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+.indicatorValuesWarning{
+    width: 100%;
+    display: block;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.mgTop{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mgTop>*:nth-child(1) {
+    width: calc(100% /2);
+    margin-right: 10px;
+}
+
+.mgTop>*:nth-child(2) {
+    width: calc((100% /2));
+}
+.LayoutBox>*:nth-child(1) {
+    width: calc(100% /6);
+}
+
+.LayoutBox>*:nth-child(2) {
+    width: calc((100% /6)*5);
+}
+
+.padding {
+    padding: 10px;
+}
+
+.backgroud {
+    height: 100vh;
+    margin-top: 10px;
+
+}
+
+.backgroudSuccess {
+    background-color: green;
+}
+
+.marginTop {
+    margin-top: 10px;
+}
+
+.row {
+    display: block;
+}
+
+.Row {
+    display: flex;
+}
+
+.Row>* {
+    width: 100%;
+    padding: 1rem;
+}
+.marginBottom {
+    margin-bottom: 5px;
+}
+
+
+.row>* {
+    width: 100%;
+    padding: 1rem;
+}
+
+.row>*:nth-child(1) {
+    width: calc(100% /1.55);
+    padding-top: 2px;
+}
+
+.row>*:nth-child(2) {
+    width: calc((100% / 1.55));
+    padding-top: 2px;
+}
+
+.row>*:nth-child(3) {
+    width: calc((100% / 1.55));
+    padding-top: 2px;
+}
+
+.row>*:nth-child(4) {
+    width: calc((100% / 1.55));
+    padding-top: 2px;
+}
+
+.fetchButton {
+    margin-top: 10px;
+    position: absolute;
+    left: 83%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: calc((100% / 3));
+}
+
+.saveBtn {
+    padding: 20px;
+}
+
+.btContainer {
+    position: relative;
+}
+
+.sideNav {
+    width: 400%;
+    z-index: 1;
+    position: relative;
+    top: 20;
+    left: 5;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.mainContent {
+    margin-left: 100px;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.tabContent {
+    display: block;
+}
+
+.tabContent .active {
+    display: block;
+}
+
+.maxWidth {
+    max-width: 918px;
+}
+
+@media screen and (max-width: 1000px) {
+    .LayoutBox {
+        display: block;
+    }
+
+    .sideNav {
+        height: 200px;
+        width: 100%;
+        z-index: 1;
+        top: 20;
+        left: 5;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        padding: 20px;
+    }
+
+    .LayoutBox>*:nth-child(1) {
+        width: calc(100%);
+    }
+
+    .LayoutBox>*:nth-child(2) {
+        width: calc((100%));
+    }
+
+    .mainContent {
+        margin-left: 5px;
+        /* Same as the width of the sidenav */
+        font-size: 28px;
+        /* Increased text to enable scrolling */
+        padding: 0px 10px;
+    }
+    .row>*:nth-child(1) {
+        width: calc(100% /1);
+        padding-top: 2px;
+    }
+    
+    .row>*:nth-child(2) {
+        width: calc((100% / 1));
+        padding-top: 2px;
+    }
+    
+    .row>*:nth-child(3) {
+        width: calc((100% / 1));
+        padding-top: 2px;
+    }
+    
+    .row>*:nth-child(4) {
+        width: calc((100% / 1));
+        padding-top: 2px;
+    }
+    
+}
